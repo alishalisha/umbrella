@@ -1,0 +1,466 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i', 'axios' ]
+2 info using npm@1.2.30
+3 info using node@v0.10.11
+4 verbose read json /home/pi/projects/blizzard/package.json
+5 verbose read json /home/pi/projects/blizzard/node_modules/async/package.json
+6 verbose read json /home/pi/projects/blizzard/node_modules/debug/package.json
+7 verbose read json /home/pi/projects/blizzard/node_modules/epoll/package.json
+8 verbose read json /home/pi/projects/blizzard/node_modules/ms/package.json
+9 verbose read json /home/pi/projects/blizzard/node_modules/nan/package.json
+10 verbose read json /home/pi/projects/blizzard/node_modules/rpi-gpio/package.json
+11 verbose read json /home/pi/projects/blizzard/package.json
+12 verbose cache add [ 'axios', null ]
+13 verbose cache add name=undefined spec="axios" args=["axios",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'axios',
+14 verbose parsed url   path: 'axios',
+14 verbose parsed url   href: 'axios' }
+15 silly lockFile e1f9a946-axios axios
+16 verbose lock axios /home/pi/.npm/e1f9a946-axios.lock
+17 silly lockFile e1f9a946-axios axios
+18 silly lockFile e1f9a946-axios axios
+19 verbose addNamed [ 'axios', '' ]
+20 verbose addNamed [ null, '' ]
+21 silly lockFile 0700b986-axios axios@
+22 verbose lock axios@ /home/pi/.npm/0700b986-axios.lock
+23 silly addNameRange { name: 'axios', range: '', hasData: false }
+24 verbose url raw axios
+25 verbose url resolving [ 'https://registry.npmjs.org/', './axios' ]
+26 verbose url resolved https://registry.npmjs.org/axios
+27 info trying registry request attempt 1 at 20:41:56
+28 verbose etag "B6K7SV2JN9PUAOKAV5ZJU0FYX"
+29 http GET https://registry.npmjs.org/axios
+30 http 304 https://registry.npmjs.org/axios
+31 silly registry.get cb [ 304,
+31 silly registry.get   { date: 'Sat, 23 Jan 2016 20:41:56 GMT',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     'cache-control': 'max-age=300',
+31 silly registry.get     etag: '"B6K7SV2JN9PUAOKAV5ZJU0FYX"',
+31 silly registry.get     age: '38',
+31 silly registry.get     connection: 'keep-alive',
+31 silly registry.get     'x-served-by': 'cache-jfk1028-JFK',
+31 silly registry.get     'x-cache': 'HIT',
+31 silly registry.get     'x-cache-hits': '1',
+31 silly registry.get     'x-timer': 'S1453581716.972405,VS0,VE0',
+31 silly registry.get     vary: 'Accept' } ]
+32 verbose etag axios from cache
+33 silly addNameRange number 2 { name: 'axios', range: '', hasData: true }
+34 silly addNameRange versions [ 'axios',
+34 silly addNameRange   [ '0.1.0',
+34 silly addNameRange     '0.2.0',
+34 silly addNameRange     '0.2.1',
+34 silly addNameRange     '0.2.2',
+34 silly addNameRange     '0.3.0',
+34 silly addNameRange     '0.3.1',
+34 silly addNameRange     '0.4.0',
+34 silly addNameRange     '0.4.1',
+34 silly addNameRange     '0.4.2',
+34 silly addNameRange     '0.5.0',
+34 silly addNameRange     '0.5.1',
+34 silly addNameRange     '0.5.2',
+34 silly addNameRange     '0.5.3',
+34 silly addNameRange     '0.5.4',
+34 silly addNameRange     '0.6.0',
+34 silly addNameRange     '0.7.0',
+34 silly addNameRange     '0.8.0',
+34 silly addNameRange     '0.8.1',
+34 silly addNameRange     '0.9.0' ] ]
+35 verbose addNamed [ 'axios', '0.9.0' ]
+36 verbose addNamed [ '0.9.0', '0.9.0' ]
+37 silly lockFile bca2e372-axios-0-9-0 axios@0.9.0
+38 verbose lock axios@0.9.0 /home/pi/.npm/bca2e372-axios-0-9-0.lock
+39 verbose read json /home/pi/.npm/axios/0.9.0/package/package.json
+40 silly lockFile bca2e372-axios-0-9-0 axios@0.9.0
+41 silly lockFile bca2e372-axios-0-9-0 axios@0.9.0
+42 silly lockFile 0700b986-axios axios@
+43 silly lockFile 0700b986-axios axios@
+44 silly resolved [ { name: 'axios',
+44 silly resolved     version: '0.9.0',
+44 silly resolved     description: 'Promise based HTTP client for the browser and node.js',
+44 silly resolved     main: 'index.js',
+44 silly resolved     scripts:
+44 silly resolved      { build: 'grunt build',
+44 silly resolved        test: 'grunt test',
+44 silly resolved        start: 'node ./sandbox/server.js',
+44 silly resolved        examples: 'node ./examples/server.js',
+44 silly resolved        coveralls: 'cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js' },
+44 silly resolved     repository:
+44 silly resolved      { type: 'git',
+44 silly resolved        url: 'git+https://github.com/mzabriskie/axios.git' },
+44 silly resolved     keywords: [ 'xhr', 'http', 'ajax', 'promise', 'node' ],
+44 silly resolved     author: { name: 'Matt Zabriskie' },
+44 silly resolved     license: 'MIT',
+44 silly resolved     bugs: { url: 'https://github.com/mzabriskie/axios/issues' },
+44 silly resolved     homepage: 'https://github.com/mzabriskie/axios',
+44 silly resolved     devDependencies:
+44 silly resolved      { coveralls: '2.11.6',
+44 silly resolved        'es6-promise': '3.0.2',
+44 silly resolved        grunt: '0.4.5',
+44 silly resolved        'grunt-banner': '0.6.0',
+44 silly resolved        'grunt-cli': '0.1.13',
+44 silly resolved        'grunt-contrib-clean': '0.7.0',
+44 silly resolved        'grunt-contrib-nodeunit': '0.4.1',
+44 silly resolved        'grunt-contrib-watch': '0.6.1',
+44 silly resolved        'grunt-eslint': '17.3.1',
+44 silly resolved        'grunt-karma': '0.12.1',
+44 silly resolved        'grunt-ts': '5.3.2',
+44 silly resolved        'grunt-update-json': '0.2.2',
+44 silly resolved        'grunt-webpack': '1.0.11',
+44 silly resolved        'istanbul-instrumenter-loader': '^0.1.3',
+44 silly resolved        'jasmine-core': '2.4.1',
+44 silly resolved        karma: '0.13.19',
+44 silly resolved        'karma-coverage': '0.5.3',
+44 silly resolved        'karma-jasmine': '0.3.6',
+44 silly resolved        'karma-jasmine-ajax': '0.1.13',
+44 silly resolved        'karma-phantomjs-launcher': '0.2.3',
+44 silly resolved        'karma-sinon': '1.0.4',
+44 silly resolved        'karma-sourcemap-loader': '0.3.7',
+44 silly resolved        'karma-webpack': '1.7.0',
+44 silly resolved        'load-grunt-tasks': '3.4.0',
+44 silly resolved        minimist: '1.2.0',
+44 silly resolved        phantomjs: '1.9.19',
+44 silly resolved        webpack: '1.12.11',
+44 silly resolved        'webpack-dev-server': '1.14.1' },
+44 silly resolved     browser: { './lib/adapters/http.js': './lib/adapters/xhr.js' },
+44 silly resolved     typescript: { definition: './axios.d.ts' },
+44 silly resolved     dependencies: { 'follow-redirects': '0.0.7' },
+44 silly resolved     gitHead: '7ec97dd26b3af7bb0995eef178c4edd8989c3152',
+44 silly resolved     _id: 'axios@0.9.0',
+44 silly resolved     _shasum: '89544ac5f55bc94f576db4e663d7530cb4f87d14',
+44 silly resolved     _from: 'axios@',
+44 silly resolved     _npmVersion: '2.14.3',
+44 silly resolved     _nodeVersion: '3.3.1',
+44 silly resolved     _npmUser: { name: 'mzabriskie', email: 'mzabriskie@gmail.com' },
+44 silly resolved     maintainers: [ [Object] ],
+44 silly resolved     dist:
+44 silly resolved      { shasum: '89544ac5f55bc94f576db4e663d7530cb4f87d14',
+44 silly resolved        tarball: 'http://registry.npmjs.org/axios/-/axios-0.9.0.tgz' },
+44 silly resolved     directories: {},
+44 silly resolved     _resolved: 'https://registry.npmjs.org/axios/-/axios-0.9.0.tgz',
+44 silly resolved     readme: 'ERROR: No README data found!' } ]
+45 info install axios@0.9.0 into /home/pi/projects/blizzard
+46 info installOne axios@0.9.0
+47 verbose from cache /home/pi/.npm/axios/0.9.0/package/package.json
+48 info /home/pi/projects/blizzard/node_modules/axios unbuild
+49 verbose read json /home/pi/projects/blizzard/node_modules/axios/package.json
+50 verbose tar unpack /home/pi/.npm/axios/0.9.0/package.tgz
+51 silly lockFile 3f109d97-ects-blizzard-node-modules-axios tar:///home/pi/projects/blizzard/node_modules/axios
+52 verbose lock tar:///home/pi/projects/blizzard/node_modules/axios /home/pi/.npm/3f109d97-ects-blizzard-node-modules-axios.lock
+53 silly lockFile 9e03db25-e-pi-npm-axios-0-9-0-package-tgz tar:///home/pi/.npm/axios/0.9.0/package.tgz
+54 verbose lock tar:///home/pi/.npm/axios/0.9.0/package.tgz /home/pi/.npm/9e03db25-e-pi-npm-axios-0-9-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm extractEntry README.md
+58 silly gunzTarPerm extractEntry LICENSE
+59 silly gunzTarPerm extractEntry index.js
+60 silly gunzTarPerm extractEntry UPGRADE_GUIDE.md
+61 silly gunzTarPerm extractEntry axios.d.ts
+62 silly gunzTarPerm extractEntry component.json
+63 silly gunzTarPerm extractEntry dist/axios.js
+64 silly gunzTarPerm extractEntry dist/axios.min.js
+65 silly gunzTarPerm extractEntry dist/axios.map
+66 silly gunzTarPerm extractEntry dist/axios.min.map
+67 silly gunzTarPerm extractEntry http_proxy.txt
+68 silly gunzTarPerm extractEntry CHANGELOG.md
+69 silly gunzTarPerm extractEntry lib/axios.js
+70 silly gunzTarPerm extractEntry lib/defaults.js
+71 silly gunzTarPerm extractEntry lib/utils.js
+72 silly gunzTarPerm extractEntry lib/adapters/http.js
+73 silly gunzTarPerm extractEntry lib/adapters/xhr.js
+74 silly gunzTarPerm extractEntry lib/core/InterceptorManager.js
+75 silly gunzTarPerm extractEntry lib/core/dispatchRequest.js
+76 silly gunzTarPerm extractEntry lib/helpers/bind.js
+77 silly gunzTarPerm extractEntry lib/helpers/buildURL.js
+78 silly gunzTarPerm extractEntry lib/helpers/combineURLs.js
+79 silly gunzTarPerm extractEntry lib/helpers/cookies.js
+80 silly gunzTarPerm extractEntry lib/helpers/btoa.js
+81 silly gunzTarPerm extractEntry lib/helpers/isAbsoluteURL.js
+82 silly gunzTarPerm extractEntry lib/helpers/isURLSameOrigin.js
+83 silly gunzTarPerm extractEntry lib/helpers/parseHeaders.js
+84 silly gunzTarPerm extractEntry lib/helpers/spread.js
+85 silly gunzTarPerm extractEntry lib/helpers/transformData.js
+86 silly gunzTarPerm extractEntry lib/helpers/deprecatedMethod.js
+87 verbose read json /home/pi/projects/blizzard/node_modules/axios/package.json
+88 silly lockFile 3f109d97-ects-blizzard-node-modules-axios tar:///home/pi/projects/blizzard/node_modules/axios
+89 silly lockFile 3f109d97-ects-blizzard-node-modules-axios tar:///home/pi/projects/blizzard/node_modules/axios
+90 silly lockFile 9e03db25-e-pi-npm-axios-0-9-0-package-tgz tar:///home/pi/.npm/axios/0.9.0/package.tgz
+91 silly lockFile 9e03db25-e-pi-npm-axios-0-9-0-package-tgz tar:///home/pi/.npm/axios/0.9.0/package.tgz
+92 info preinstall axios@0.9.0
+93 verbose from cache /home/pi/projects/blizzard/node_modules/axios/package.json
+94 verbose readDependencies using package.json deps
+95 verbose from cache /home/pi/projects/blizzard/node_modules/axios/package.json
+96 verbose readDependencies using package.json deps
+97 verbose cache add [ 'follow-redirects@0.0.7', null ]
+98 verbose cache add name=undefined spec="follow-redirects@0.0.7" args=["follow-redirects@0.0.7",null]
+99 verbose parsed url { protocol: null,
+99 verbose parsed url   slashes: null,
+99 verbose parsed url   auth: null,
+99 verbose parsed url   host: null,
+99 verbose parsed url   port: null,
+99 verbose parsed url   hostname: null,
+99 verbose parsed url   hash: null,
+99 verbose parsed url   search: null,
+99 verbose parsed url   query: null,
+99 verbose parsed url   pathname: 'follow-redirects@0.0.7',
+99 verbose parsed url   path: 'follow-redirects@0.0.7',
+99 verbose parsed url   href: 'follow-redirects@0.0.7' }
+100 verbose cache add name="follow-redirects" spec="0.0.7" args=["follow-redirects","0.0.7"]
+101 verbose parsed url { protocol: null,
+101 verbose parsed url   slashes: null,
+101 verbose parsed url   auth: null,
+101 verbose parsed url   host: null,
+101 verbose parsed url   port: null,
+101 verbose parsed url   hostname: null,
+101 verbose parsed url   hash: null,
+101 verbose parsed url   search: null,
+101 verbose parsed url   query: null,
+101 verbose parsed url   pathname: '0.0.7',
+101 verbose parsed url   path: '0.0.7',
+101 verbose parsed url   href: '0.0.7' }
+102 verbose addNamed [ 'follow-redirects', '0.0.7' ]
+103 verbose addNamed [ '0.0.7', '0.0.7' ]
+104 silly lockFile aaf46edf-follow-redirects-0-0-7 follow-redirects@0.0.7
+105 verbose lock follow-redirects@0.0.7 /home/pi/.npm/aaf46edf-follow-redirects-0-0-7.lock
+106 verbose url raw follow-redirects/0.0.7
+107 verbose url resolving [ 'https://registry.npmjs.org/', './follow-redirects/0.0.7' ]
+108 verbose url resolved https://registry.npmjs.org/follow-redirects/0.0.7
+109 info trying registry request attempt 1 at 20:42:00
+110 verbose etag "3YU74UMT95CAN08337G5INJIJ"
+111 http GET https://registry.npmjs.org/follow-redirects/0.0.7
+112 http 304 https://registry.npmjs.org/follow-redirects/0.0.7
+113 silly registry.get cb [ 304,
+113 silly registry.get   { date: 'Sat, 23 Jan 2016 20:42:00 GMT',
+113 silly registry.get     via: '1.1 varnish',
+113 silly registry.get     'cache-control': 'max-age=300',
+113 silly registry.get     etag: '"3YU74UMT95CAN08337G5INJIJ"',
+113 silly registry.get     age: '27',
+113 silly registry.get     connection: 'keep-alive',
+113 silly registry.get     'x-served-by': 'cache-jfk1028-JFK',
+113 silly registry.get     'x-cache': 'HIT',
+113 silly registry.get     'x-cache-hits': '1',
+113 silly registry.get     'x-timer': 'S1453581720.940319,VS0,VE0',
+113 silly registry.get     vary: 'Accept' } ]
+114 verbose etag follow-redirects/0.0.7 from cache
+115 verbose read json /home/pi/.npm/follow-redirects/0.0.7/package/package.json
+116 silly lockFile aaf46edf-follow-redirects-0-0-7 follow-redirects@0.0.7
+117 silly lockFile aaf46edf-follow-redirects-0-0-7 follow-redirects@0.0.7
+118 silly resolved [ { name: 'follow-redirects',
+118 silly resolved     version: '0.0.7',
+118 silly resolved     description: 'HTTP and HTTPS modules that follow redirects.',
+118 silly resolved     main: 'index.js',
+118 silly resolved     scripts:
+118 silly resolved      { test: 'npm run cover && npm run lint && npm run style',
+118 silly resolved        lint: 'jshint *.js test/*.js test/**/*.js',
+118 silly resolved        style: 'jscs *.js && jscs test/*.js test/**/*.js --config=test/.jscsrc',
+118 silly resolved        cover: 'BLUEBIRD_DEBUG=1 istanbul cover ./node_modules/.bin/_mocha',
+118 silly resolved        debug: 'BLUEBIRD_DEBUG=1 mocha' },
+118 silly resolved     repository:
+118 silly resolved      { type: 'git',
+118 silly resolved        url: 'git@github.com:olalonde/follow-redirects.git' },
+118 silly resolved     homepage: 'https://github.com/olalonde/follow-redirects',
+118 silly resolved     bugs: { url: 'https://github.com/olalonde/follow-redirects/issues' },
+118 silly resolved     keywords:
+118 silly resolved      [ 'http',
+118 silly resolved        'https',
+118 silly resolved        'url',
+118 silly resolved        'redirect',
+118 silly resolved        'client',
+118 silly resolved        'location',
+118 silly resolved        'utility' ],
+118 silly resolved     author:
+118 silly resolved      { name: 'Olivier Lalonde',
+118 silly resolved        email: 'olalonde@gmail.com',
+118 silly resolved        url: 'http://www.syskall.com' },
+118 silly resolved     contributors: [ [Object] ],
+118 silly resolved     files: [ 'index.js', 'create.js', 'http.js', 'https.js' ],
+118 silly resolved     dependencies: { debug: '^2.2.0', 'stream-consume': '^0.1.0' },
+118 silly resolved     devDependencies:
+118 silly resolved      { bluebird: '^2.9.30',
+118 silly resolved        'concat-stream': '^1.5.0',
+118 silly resolved        coveralls: '^2.11.2',
+118 silly resolved        express: '^4.13.0',
+118 silly resolved        istanbul: '^0.3.17',
+118 silly resolved        jscs: '^1.13.1',
+118 silly resolved        jshint: '^2.8.0',
+118 silly resolved        mocha: '^2.2.5',
+118 silly resolved        semver: '~4.3.6' },
+118 silly resolved     license: 'MIT',
+118 silly resolved     readme: '## Follow Redirects\n\nDrop in replacement for Nodes `http` and `https` that automatically follows redirects.\n\n[![Build Status](https://travis-ci.org/olalonde/follow-redirects.svg?branch=master)](https://travis-ci.org/olalonde/follow-redirects)\n[![Coverage Status](https://coveralls.io/repos/olalonde/follow-redirects/badge.svg?branch=master)](https://coveralls.io/r/olalonde/follow-redirects?branch=master)\n[![Code Climate](https://codeclimate.com/github/olalonde/follow-redirects/badges/gpa.svg)](https://codeclimate.com/github/olalonde/follow-redirects)\n[![Dependency Status](https://david-dm.org/olalonde/follow-redirects.svg)](https://david-dm.org/olalonde/follow-redirects)\n[![devDependency Status](https://david-dm.org/olalonde/follow-redirects/dev-status.svg)](https://david-dm.org/olalonde/follow-redirects#info=devDependencies)\n\n[![NPM](https://nodei.co/npm/follow-redirects.png?downloads=true)](https://nodei.co/npm/follow-redirects/)\n\n`follow-redirects` provides [request](https://nodejs.org/api/http.html#http_http_request_options_callback) and [get](https://nodejs.org/api/http.html#http_http_get_options_callback)\n methods that behave identically to those found on the native [http](https://nodejs.org/api/http.html#http_http_request_options_callback) and [https](https://nodejs.org/api/https.html#https_https_request_options_callback)\n modules, with the exception that they will seamlessly follow redirects.\n\n```javascript\nvar http = require(\'follow-redirects\').http;\nvar https = require(\'follow-redirects\').https;\n\nhttp.get(\'http://bit.ly/900913\', function (res) {\n  res.on(\'data\', function (chunk) {\n    console.log(chunk);\n  });\n}).on(\'error\', function (err) {\n  console.error(err);\n});\n```\n\nBy default the number of redirects is limited to 5, but you can modify that globally or per request.\n\n```javascript\nrequire(\'follow-redirects\').maxRedirects = 10;   // Has global affect (be careful!)\n\nhttps.request({\n  host: \'bitly.com\',\n  path: \'/UHfDGO\',\n  maxRedirects: 3   // per request setting\n}, function (res) {/* ... */});\n```\n\nYou can inspect the redirection chain from the `fetchedUrls` array on the `response`.\nThe array is populated in reverse order, so the original url you requested will be the\nlast element, while the final redirection point will be at index 0.\n\n```javascript\nhttps.request({\n  host: \'bitly.com\',\n  path: \'/UHfDGO\',\n}, function (res) {\n  console.log(res.fetchedUrls);\n  // [ \'http://duckduckgo.com/robots.txt\',  \'http://bitly.com/UHfDGO\' ]\n});\n```\n\n## Browserify Usage\n\nDue to the way `XMLHttpRequest` works, the `browserify` versions of `http` and `https` already follow redirects.\n If you are *only* targetting the browser, then this library has little value for you. If you want to write cross\n platform code for node and the browser, `follow-redirects` provides a great solution for making the native node\n modules behave the same as they do in browserified builds in the browser. To avoid bundling unnecessary code\n you should tell browserify to swap out `follow-redirects` with the standard modules when bundling.\n To make this easier, you need to change how you require the modules:\n\n```javascript\nvar http = require(\'follow-redirects/http\');\nvar https = require(\'follow-redirects/https\');\n```\n\nYou can then replace `follow-redirects` in your browserify configuration like so:\n\n```javascript\n"browser": {\n  "follow-redirects/http"  : "http",\n  "follow-redirects/https" : "https"\n}\n```\n\nThe `browserify-http` module has not kept pace with node development, and no long behaves identically to the native\n module when running in the browser. If you are experiencing problems, you may want to check out\n [browserify-http-2](https://www.npmjs.com/package/http-browserify-2). It is more actively maintained and\n attempts to address a few of the shortcomings of `browserify-http`. In that case, your browserify config should\n look something like this:\n\n```javascript\n"browser": {\n  "follow-redirects/http"  : "browserify-http-2/http",\n  "follow-redirects/https" : "browserify-http-2/https"\n}\n```\n\n## Contributing\n\nPull Requests are always welcome. Please [file an issue](https://github.com/olalonde/follow-redirects/issues)\n detailing your proposal before you invest your valuable time. Additional features and bug fixes should be accompanied\n by tests. You can run the test suite locally with a simple `npm test` command.\n\n## Debug Logging\n\n`follow-redirects` uses the excellent [debug](https://www.npmjs.com/package/debug) for logging. To turn on logging\n set the environment variable `DEBUG=follow-redirects` for debug output from just this module. When running the test\n suite it is sometimes advantageous to set `DEBUG=*` to see output from the express server as well.\n\n## Authors\n\nOlivier Lalonde (olalonde@gmail.com)\n\nJames Talmage (james@talmage.io)\n\n## License\n\nMIT: [http://olalonde.mit-license.org](http://olalonde.mit-license.org)\n',
+118 silly resolved     readmeFilename: 'README.md',
+118 silly resolved     _id: 'follow-redirects@0.0.7',
+118 silly resolved     _from: 'follow-redirects@0.0.7' } ]
+119 info install follow-redirects@0.0.7 into /home/pi/projects/blizzard/node_modules/axios
+120 info installOne follow-redirects@0.0.7
+121 verbose from cache /home/pi/.npm/follow-redirects/0.0.7/package/package.json
+122 info /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects unbuild
+123 verbose read json /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects/package.json
+124 verbose tar unpack /home/pi/.npm/follow-redirects/0.0.7/package.tgz
+125 silly lockFile 752e9397-os-node-modules-follow-redirects tar:///home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects
+126 verbose lock tar:///home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects /home/pi/.npm/752e9397-os-node-modules-follow-redirects.lock
+127 silly lockFile 87a6e190-llow-redirects-0-0-7-package-tgz tar:///home/pi/.npm/follow-redirects/0.0.7/package.tgz
+128 verbose lock tar:///home/pi/.npm/follow-redirects/0.0.7/package.tgz /home/pi/.npm/87a6e190-llow-redirects-0-0-7-package-tgz.lock
+129 silly gunzTarPerm modes [ '755', '644' ]
+130 silly gunzTarPerm extractEntry package.json
+131 silly gunzTarPerm extractEntry README.md
+132 silly gunzTarPerm extractEntry create.js
+133 silly gunzTarPerm extractEntry http.js
+134 silly gunzTarPerm extractEntry https.js
+135 silly gunzTarPerm extractEntry index.js
+136 verbose read json /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects/package.json
+137 silly lockFile 752e9397-os-node-modules-follow-redirects tar:///home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects
+138 silly lockFile 752e9397-os-node-modules-follow-redirects tar:///home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects
+139 silly lockFile 87a6e190-llow-redirects-0-0-7-package-tgz tar:///home/pi/.npm/follow-redirects/0.0.7/package.tgz
+140 silly lockFile 87a6e190-llow-redirects-0-0-7-package-tgz tar:///home/pi/.npm/follow-redirects/0.0.7/package.tgz
+141 info preinstall follow-redirects@0.0.7
+142 verbose from cache /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects/package.json
+143 verbose readDependencies using package.json deps
+144 verbose from cache /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects/package.json
+145 verbose readDependencies using package.json deps
+146 verbose cache add [ 'stream-consume@^0.1.0', null ]
+147 verbose cache add name=undefined spec="stream-consume@^0.1.0" args=["stream-consume@^0.1.0",null]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: 'stream-consume@^0.1.0',
+148 verbose parsed url   path: 'stream-consume@^0.1.0',
+148 verbose parsed url   href: 'stream-consume@^0.1.0' }
+149 verbose cache add name="stream-consume" spec="^0.1.0" args=["stream-consume","^0.1.0"]
+150 verbose parsed url { protocol: null,
+150 verbose parsed url   slashes: null,
+150 verbose parsed url   auth: null,
+150 verbose parsed url   host: null,
+150 verbose parsed url   port: null,
+150 verbose parsed url   hostname: null,
+150 verbose parsed url   hash: null,
+150 verbose parsed url   search: null,
+150 verbose parsed url   query: null,
+150 verbose parsed url   pathname: '^0.1.0',
+150 verbose parsed url   path: '^0.1.0',
+150 verbose parsed url   href: '^0.1.0' }
+151 verbose addNamed [ 'stream-consume', '^0.1.0' ]
+152 verbose addNamed [ null, null ]
+153 silly lockFile 1f59104e-stream-consume-0-1-0 stream-consume@^0.1.0
+154 verbose lock stream-consume@^0.1.0 /home/pi/.npm/1f59104e-stream-consume-0-1-0.lock
+155 verbose cache add [ 'debug@^2.2.0', null ]
+156 verbose cache add name=undefined spec="debug@^2.2.0" args=["debug@^2.2.0",null]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: null,
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: 'debug@^2.2.0',
+157 verbose parsed url   path: 'debug@^2.2.0',
+157 verbose parsed url   href: 'debug@^2.2.0' }
+158 verbose cache add name="debug" spec="^2.2.0" args=["debug","^2.2.0"]
+159 verbose parsed url { protocol: null,
+159 verbose parsed url   slashes: null,
+159 verbose parsed url   auth: null,
+159 verbose parsed url   host: null,
+159 verbose parsed url   port: null,
+159 verbose parsed url   hostname: null,
+159 verbose parsed url   hash: null,
+159 verbose parsed url   search: null,
+159 verbose parsed url   query: null,
+159 verbose parsed url   pathname: '^2.2.0',
+159 verbose parsed url   path: '^2.2.0',
+159 verbose parsed url   href: '^2.2.0' }
+160 verbose addNamed [ 'debug', '^2.2.0' ]
+161 verbose addNamed [ null, null ]
+162 silly lockFile 862c00aa-debug-2-2-0 debug@^2.2.0
+163 verbose lock debug@^2.2.0 /home/pi/.npm/862c00aa-debug-2-2-0.lock
+164 info addNameTag [ 'stream-consume', '^0.1.0' ]
+165 info addNameTag [ 'debug', '^2.2.0' ]
+166 verbose url raw stream-consume
+167 verbose url resolving [ 'https://registry.npmjs.org/', './stream-consume' ]
+168 verbose url resolved https://registry.npmjs.org/stream-consume
+169 info trying registry request attempt 1 at 20:42:01
+170 verbose etag "DGXKXNNMAKCR6L48455H3IEA8"
+171 http GET https://registry.npmjs.org/stream-consume
+172 verbose url raw debug
+173 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+174 verbose url resolved https://registry.npmjs.org/debug
+175 info trying registry request attempt 1 at 20:42:01
+176 verbose etag "D1UXIOIGF03GFNWHNOXGKZHIA"
+177 http GET https://registry.npmjs.org/debug
+178 http 304 https://registry.npmjs.org/debug
+179 silly registry.get cb [ 304,
+179 silly registry.get   { date: 'Sat, 23 Jan 2016 20:42:01 GMT',
+179 silly registry.get     via: '1.1 varnish',
+179 silly registry.get     'cache-control': 'max-age=300',
+179 silly registry.get     etag: '"D1UXIOIGF03GFNWHNOXGKZHIA"',
+179 silly registry.get     age: '43',
+179 silly registry.get     connection: 'keep-alive',
+179 silly registry.get     'x-served-by': 'cache-jfk1027-JFK',
+179 silly registry.get     'x-cache': 'HIT',
+179 silly registry.get     'x-cache-hits': '1',
+179 silly registry.get     'x-timer': 'S1453581721.922918,VS0,VE0',
+179 silly registry.get     vary: 'Accept' } ]
+180 verbose etag debug from cache
+181 http 304 https://registry.npmjs.org/stream-consume
+182 silly registry.get cb [ 304,
+182 silly registry.get   { date: 'Sat, 23 Jan 2016 20:42:01 GMT',
+182 silly registry.get     via: '1.1 varnish',
+182 silly registry.get     'cache-control': 'max-age=300',
+182 silly registry.get     etag: '"DGXKXNNMAKCR6L48455H3IEA8"',
+182 silly registry.get     age: '115',
+182 silly registry.get     connection: 'keep-alive',
+182 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+182 silly registry.get     'x-cache': 'HIT',
+182 silly registry.get     'x-cache-hits': '3',
+182 silly registry.get     'x-timer': 'S1453581721.944061,VS0,VE0',
+182 silly registry.get     vary: 'Accept' } ]
+183 verbose etag stream-consume from cache
+184 silly lockFile 862c00aa-debug-2-2-0 debug@^2.2.0
+185 silly lockFile 862c00aa-debug-2-2-0 debug@^2.2.0
+186 silly lockFile 1f59104e-stream-consume-0-1-0 stream-consume@^0.1.0
+187 silly lockFile 1f59104e-stream-consume-0-1-0 stream-consume@^0.1.0
+188 verbose about to build /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects
+189 info /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects unbuild
+190 verbose from cache /home/pi/projects/blizzard/node_modules/axios/node_modules/follow-redirects/package.json
+191 info preuninstall follow-redirects@0.0.7
+192 info uninstall follow-redirects@0.0.7
+193 verbose false,/home/pi/projects/blizzard/node_modules,/home/pi/projects/blizzard/node_modules/axios/node_modules unbuild follow-redirects@0.0.7
+194 info postuninstall follow-redirects@0.0.7
+195 verbose about to build /home/pi/projects/blizzard/node_modules/axios
+196 info /home/pi/projects/blizzard/node_modules/axios unbuild
+197 verbose from cache /home/pi/projects/blizzard/node_modules/axios/package.json
+198 info preuninstall axios@0.9.0
+199 info uninstall axios@0.9.0
+200 verbose true,/home/pi/projects/blizzard/node_modules,/home/pi/projects/blizzard/node_modules unbuild axios@0.9.0
+201 info postuninstall axios@0.9.0
+202 error Error: No compatible version found: debug@'^2.2.0'
+202 error Valid install targets:
+202 error ["0.0.1","0.1.0","0.2.0","0.3.0","0.4.0","0.4.1","0.5.0","0.6.0","0.7.0","0.7.1","0.7.2","0.7.3","0.7.4","0.8.0","0.8.1","1.0.0","1.0.1","1.0.2","1.0.3","1.0.4","2.0.0","2.1.0","2.1.1","2.1.2","2.1.3","2.2.0"]
+202 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:719:10)
+202 error     at /usr/local/lib/node_modules/npm/lib/cache.js:641:10
+202 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+202 error     at Object.oncomplete (fs.js:107:15)
+203 error If you need help, you may report this log at:
+203 error     <http://github.com/isaacs/npm/issues>
+203 error or email it to:
+203 error     <npm-@googlegroups.com>
+204 error System Linux 3.12.28+
+205 error command "/usr/local/bin/node" "/usr/local/bin/npm" "i" "axios"
+206 error cwd /home/pi/projects/blizzard
+207 error node -v v0.10.11
+208 error npm -v 1.2.30
+209 verbose exit [ 1, true ]
